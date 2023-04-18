@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body >
+<div style="height: 100000px">
+    <input type="text" id="bankinh" placeholder="Nhập bán kính " >
+    <button onclick="calculate()" > Tinh </button>
+</div>
+
+</body>
+
+
+<script>
+    function calculate() {
+        let R=document.getElementById("bankinh").value;
+        let S=Math.pow(R,2)*Math.PI;
+        document.write("Diện  tích hình tròn là  : "+S);
+
+    }
+</script>
+
+</body>
+</html>
