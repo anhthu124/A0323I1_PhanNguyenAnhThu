@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính thuế thu nhập cá nhân.</title>
+</head>
+<body>
+<script>
+    let luong = +prompt(" Nhập mức lương bạn có");
+    let thue;
+    if (luong <= 4000000)
+        alert("ban khong phai nop thue tncn ");
+    else {
+        if (luong <= 6000000) {
+            thue = (luong - 4000000) * 5 / 100;
+            alert("ban phai nop thue thu nhap ca nhan :" + thue);
+        } else {
+            if (luong <= 9000000) {
+                thue = (6000000 - 4000000) * 5 / 100 + (luong - 6000000) * 10 / 100;
+                alert("ban phai nop thue thu nhap ca nhan : " + thue);
+            } else {
+                if (luong <= 14000000) {
+                    thue = (6000000 - 4000000) * 5 / 100 + (9000000 - 6000000) * 10 / 100 + (luong - 9000000) * 15 / 100;
+                    alert("ban phai nop thue thu nhap ca nhan : " + thue);
+                } else {
+                    thue = (6000000 - 4000000) * 5 / 100 + (9000000 - 6000000) * 10 / 100 + (14000000 - 9000000) * 15 / 100 + (24000000 - 14000000) * 20 / 100 + (44000000 - 24000000) * 25 / 100 + (84000000 - 44000000) * 30 / 100 + (luong - 84000000) * 35 / 100;
+                    alert("ban phai nop thue thu nhap ca nhan :" + thue);
+
+                }
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

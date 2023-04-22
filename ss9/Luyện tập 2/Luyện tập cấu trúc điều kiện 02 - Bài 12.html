@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi ngân hàng</title>
+</head>
+<body>
+<script>
+    let v = +prompt(" Nhập tiền  ban đầu");
+    let lx = +prompt(" Nhập lãi xuất");
+    let month = +prompt(" Nhập số tháng vay");
+    let p = (v * Math.pow((1 + lx), month) - v);
+    alert("lãi ngân hàng theo " + month + "tháng là: " + p)
+</script>
+</body>
+</html>

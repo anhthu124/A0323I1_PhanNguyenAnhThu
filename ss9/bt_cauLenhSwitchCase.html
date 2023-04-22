@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Câu lệnh Switch case </title>
+</head>
+<body>
+<form>
+    <table>
+        <h2> Form tính số ngày </h2>
+
+        <input type=" text" id="month" name="month"/>
+        <button type="button" name="tinh" id="Tính " onclick="checkId()"> Tính số ngày</button>
+
+    </table>
+    <script>
+        function checkId() {
+            let month = +document.getElementById("month").value;
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.writeln("Tháng " + month + " có 31 ngày");
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    document.writeln("Tháng " + month + " có 30 ngày");
+                    break;
+                case 2:
+                    document.writeln("Tháng 2 có 28 hoặc 29 ngày ");
+                    break;
+                default :
+                    document.writeln(" Không có tháng " + month + " trong năm");
+                    break
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

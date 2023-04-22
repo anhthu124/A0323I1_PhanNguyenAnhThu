@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính giá điện.</title>
+</head>
+<body>
+<script>
+    let kWh = +prompt(" Nhập số kWh đã dùng")
+    let tien;
+    let phaiTra;
+    if (kwh >= 0 && kwh <= 30) {
+        tien = 1000;
+    } else if (kwh > 30 && kwh <= 80) {
+        tien = 2000;
+    } else if (kwh > 80 {
+        tien = 3000;
+    }
+    phaiTra = kwh * tien;
+    alert('Số tiền điện bạn phải trả là: ' + phaiTra + 'vnđ');
+</script>
+</body>
+</html>

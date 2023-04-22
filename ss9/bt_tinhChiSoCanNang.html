@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ số cân nặng</title>
+</head>
+<body>
+<script>
+    let weight = prompt(" Enter your Weight:");
+    let height = prompt(" Enter yourHeight:");
+    let bmi = weight / (height * height);
+    if (bmi < 18.5)
+        document.writeln("Underweight");
+    else if (bmi < 25.0)
+        document.writeln(" Normal");
+    else if (bmi < 30.0)
+        document.writeln(" Overweight");
+    else
+        document.writeln("Obese")
+
+
+</script>
+</body>
+</html>

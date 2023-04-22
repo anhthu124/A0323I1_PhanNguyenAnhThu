@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Giải phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    alert(" phương trình bậc 2 có dạng : ax^2+bx+c=0")
+    let a = +prompt(" nhap a =")
+    let b = +prompt(" nhap b =")
+    let c = +prompt(" nhap c =")
+    let denTa = b * b - 4 * a * c;
+    let n1, n2;
+    if (denTa > 0) {
+        n1 = (-b + Math.sqrt(denTa)) / (2 * a);
+        n2 = (-b - Math.sqrt(denTa)) / (2 * a);
+        document.writeln(" Phương trình có 2 nghiệm phân biệt  là: " + n1 + "và " + n2);
+    } else if (denTa == 0) {
+        n1 = n2 = -b / (2 * a);
+        document.writeln(" Phương trình có nghiệm kép ngiệm 1 và 2 = :" + n1);
+    } else {
+        document.writeln(" Phương trình vô nghiệm")
+    }
+
+</script>
+</body>
+</html>
