@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> lấy thông tin nhiệt độ</title>
+</head>
+<body>
+<script>
+    let nd = +prompt(" Nhập nhiệt độ hiện tại")
+    while (nd > 100 || nd < 20) {
+        if (nd > 100) {
+            alert("Nhiệt độ quá cao -> nên giảm nhiệt độ")
+            nd = +prompt("nhập lại nhiệt độ   ");
+
+        } else (nd < 20)
+        {
+            alert(" Nhiệt độ quá thấp -> nên tăng nhiệt độ ")
+            nd = +prompt("nhập lại nhiệt độ  ");
+        }
+    }
+</script>
+</body>
+</html>

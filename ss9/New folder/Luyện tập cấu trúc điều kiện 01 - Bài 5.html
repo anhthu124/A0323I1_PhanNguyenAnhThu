@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực của học sinh </title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập điểm bài kiểm tra thường xuyên: ");
+    let b = +prompt("Nhập điểm bài thi giữa kỳ: ");
+    let c = +prompt("Nhập điểm bài thi cuối kỳ: ");
+    let avarge = (a + (b * 2) + (c * 3)) / 6;
+    if (avarge >= 8) {
+        document.write(avarge + ": Học sinh giỏi.");
+    } else if (avarge >= 6.5) {
+        document.write(avarge + ": Học sinh khá. ");
+    } else if (avarge >= 5) {
+        document.write(avarge + ": Học sinh trung bình.");
+    } else document.write(avarge + ": Học sinh yếu.");
+</script>
+</body>
+</html>

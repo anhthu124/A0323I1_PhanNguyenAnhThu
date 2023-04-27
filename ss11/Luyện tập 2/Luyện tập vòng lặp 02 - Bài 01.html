@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dãy Finonaci</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 0;
+    let c = 0
+    let fibonacci = "";
+    for (let i = 0; i < 50; i++) {
+        if (i == 0) {
+            a = 1
+            c = 1
+            fibonacci += a + " " + "<br>"
+        } else {
+
+            a = b + c
+            b = c
+            c = a
+            fibonacci += a + " " + "<br>"
+            console.log(i + " = " + a)
+        }
+    }
+    document.write(fibonacci + "")
+
+</script>
+</body>
+</html>

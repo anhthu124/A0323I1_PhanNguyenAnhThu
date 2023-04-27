@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+    <style>
+        button {
+            width: 400px;
+            height: 200px;
+            border-radius: 40px;
+            align-content: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<form name=" Game đoán số  ">
+    <button id="play" onclick="playGame()">Bắt đầu chơi</button>
+    <button id="replay">Play again</button>
+</form>
+<script>
+    let start = Number(prompt(" nhập số bắt đầu từ : "))
+    let end = Number(prompt(" nhập số kết thúc  "))
+    let nhapso = Number(prompt("Nhập vào số muốn đoán"))
+    let soRamdom
+    soRamdom = Math.floor(Math.random() * (end - start + 1)) + start;
+    for (let i = 1; i < 3; i++) {
+        if (soRamdom == nhapso) {
+            alert("Bạn đã đoán đúng")
+            break;
+        } else {
+            alert("Bạn đoán sai")
+            nhapso = Number(prompt("Nhập vào số muốn đoán"))
+        }
+    }
+</script>
+</body>
+</html>
