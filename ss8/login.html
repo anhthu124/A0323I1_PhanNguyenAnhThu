@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+
+    let useName = prompt(" who's there ?", '');
+    if (useName == "Admin") {
+        let pass = prompt(" Enter password ? ")
+        if (pass == "TheMaster") {
+            alert(" Welcome ")
+        } else if (pass == null) {
+            alert("Canceled")
+        } else {
+            alert("Wrong password")
+        }
+    } else if (useName == null) {
+        alert(" canceled");
+    } else {
+        alert(" I don't know you !")
+    }
+</script>
 </body>
 </html>

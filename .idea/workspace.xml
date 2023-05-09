@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="57930c6b-2751-4304-b017-bcd1c8b5334e" name="Default Changelist" comment="" />
+    <list default="true" id="57930c6b-2751-4304-b017-bcd1c8b5334e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bai them/Tuoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai them/baiTuoiChaTuoiCon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12/Tạo bàn cờ caro đơn giản.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12/[Bài tập] Sử dụng các hàm có sẵn của mảng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 1/Luyện tập mảng 01 - 01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 1/Luyện tập mảng 01 - 05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 1/Luyện tập mảng 01 - 06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 1/Luyện tập mảng 01 - 07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 1/Luyện tập mảng 01 - 08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 1/Luyện tập mảng 01 - 09.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 1/Luyện tập tạo và sử dụng hàm 01 - 02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 1/Luyện tập tạo và sử dụng hàm 01 - 03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 1/Luyện tập tạo và sử dụng hàm 01 - 04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 2/Luyện tập mảng 02 - 01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 2/Luyện tập mảng 02 - 02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 2/Luyện tập mảng 02 - 03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 2/Luyện tập mảng 02 - 04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 2/Luyện tập mảng 02 - 05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Luyện tập 2/Luyện tập mảng 02 - 06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Sử dụng các hàm có sẵn của mảng/bai 1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Sử dụng các hàm có sẵn của mảng/bai 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Sử dụng các hàm có sẵn của mảng/bai 3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13/Từ điển.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Bài tập] Ứng dụng máy tính.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bt_ChuyenCsangF.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bt_Tao-CV-Ca-Nhan.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bt_TaoCV-Ca-Nhan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bt_TaoDanhSach.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bt_kiemTraNamNhuan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bt_taoDanhSach.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuViHinhTron.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dienTichHinhTron.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formDangKyNguoiDung.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3/UDCDTT.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/ex01.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/ex01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/kiemTraNamNhuan.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/kiemTraNamNhuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/sign1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/sign1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/sign2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/sign2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/sign3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/sign3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Luyện tập cấu trúc điều kiện 01 - Bài 1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Luyện tập cấu trúc điều kiện 01 - Bài 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Luyện tập cấu trúc điều kiện 01 - Bài 3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Luyện tập cấu trúc điều kiện 01 - Bài 4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/New folder/Luyện tập cấu trúc điều kiện 01 - Bài 5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/New folder/Luyện tập cấu trúc điều kiện 01 - Bài 6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/New folder/Luyện tập cấu trúc điều kiện 01 - Bài 7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinhDTB.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinchao.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,21 +85,35 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2OPx0BipDY5J7ncoapK53PuHcia" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="recentsLimit" value="6" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -36,17 +125,62 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681475792673</updated>
-      <workItem from="1681475795967" duration="1622000" />
+      <workItem from="1681475795967" duration="2821000" />
+      <workItem from="1681540482474" duration="593000" />
+      <workItem from="1681737726648" duration="2811000" />
+      <workItem from="1681840976430" duration="812000" />
+      <workItem from="1681907722595" duration="6573000" />
+      <workItem from="1682004760560" duration="15577000" />
+      <workItem from="1682340611440" duration="5857000" />
+      <workItem from="1682506769252" duration="12361000" />
+      <workItem from="1682680632737" duration="4382000" />
+      <workItem from="1683290815517" duration="15057000" />
+      <workItem from="1683649698413" duration="653000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1681475866516">
+    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1682341763522">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.672@0.0.1280.672" timestamp="1681475866516" />
+    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.672@0.0.1280.672" timestamp="1682341763522" />
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1682681301347">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1682681301347" />
+    <state x="476" y="39" key="RollbackChangesDialog" timestamp="1682341767730">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="476" y="39" key="RollbackChangesDialog/0.0.1280.672@0.0.1280.672" timestamp="1682341767730" />
+    <state x="93" y="93" width="1095" height="487" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1682511541529">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="93" y="93" width="1095" height="487" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1280.672@0.0.1280.672" timestamp="1682511541529" />
+    <state x="297" y="149" key="run.anything.popup" timestamp="1682509499599">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="297" y="149" key="run.anything.popup/0.0.1280.672@0.0.1280.672" timestamp="1682509499599" />
+    <state x="297" y="-9" width="672" height="676" key="search.everywhere.popup" timestamp="1682515332876">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="297" y="-9" width="672" height="676" key="search.everywhere.popup/0.0.1280.672@0.0.1280.672" timestamp="1682515332876" />
   </component>
 </project>
