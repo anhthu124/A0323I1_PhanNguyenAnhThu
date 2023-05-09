@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Từ điển</title>
+</head>
+<body>
+<body>
+<h1>Từ Điển Anh-Việt</h1>
+<label for="word">Nhập từ cần tra: </label>
+<input type="text" id="word" name="word">
+<button onclick="search()">Tìm kiếm</button>
+<p><strong>Kết quả: </strong><span id="result"></span></p>
+
+<script>
+    // Tạo một mảng từ điển
+    var dictionary = [
+        { word: "hello", meaning: "xin chào" },
+        { word: "goodbye", meaning: "tạm biệt" },
+        { word: "cat", meaning: "con mèo" },
+        { word: "dog", meaning: "con chó" },
+        { word: "fish", meaning: "con cá" }
+    ];
+
+    function search() {
+        // Lấy giá trị từ ô input
+        var word = document.getElementById("word").value;
+
+        // Duyệt qua từ điển và tìm kiếm từ
+        for (var i = 0; i < dictionary.length; i++) {
+            if (dictionary[i].word == word) {
+                document.getElementById("result").innerHTML = dictionary[i].meaning;
+                return; // Kết thúc hàm tìm kiếm
+            }
+        }
+
+        // Nếu không tìm thấy
+        document.getElementById("result").innerHTML = "Không tìm thấy kết quả";
+    }
+</script>
+</body>
+</html>

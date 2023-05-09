@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.</title>
+</head>
+<body>
+<script>
+    let array = [3, 7, 12, 8, 5, 4, 11, 15, 1, 9]; // Khởi tạo mảng số nguyên
+    let max = array[0];
+    let maxIndex = 0;
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+            maxIndex = i;
+        }
+    }
+
+    document.writeln("Giá trị lớn nhất trong mảng là  " + max + " nằm ở vị trí thứ  " + maxIndex);
+</script>
+</body>
+</html>

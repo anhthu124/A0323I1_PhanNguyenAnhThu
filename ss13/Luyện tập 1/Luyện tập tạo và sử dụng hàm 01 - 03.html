@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giá trị trung bình của các phần tử trong mảng.</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5];
+    let max = Math.max(...arr);
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    let avg = sum / arr.length;
+    alert("Giá trị lớn nhất trong mảng là " + max);
+    document.writeln("Giá trị trung bình của các phần tử trong mảng là " + avg);
+</script>
+</body>
+</html>

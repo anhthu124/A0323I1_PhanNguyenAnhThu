@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số nguyên lớn hơn hoặc bằng 10</title>
+</head>
+<body>
+<script>
+    let numbers = [3, 7, 12, 8, 5, 4, 11, 15, 1, 9]; // Khởi tạo mảng số nguyên
+    let count = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] >= 10) {
+            count++;
+        }
+    }
+    document.writeln("Có " + count + " số nguyên lớn hơn hoặc bằng 10.");
+</script>
+</body>
+</head>
+</html>

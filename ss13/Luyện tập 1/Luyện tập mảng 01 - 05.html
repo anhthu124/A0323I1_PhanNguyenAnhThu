@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> đếm số nguyên âm trong một chuỗi</title>
+</head>
+<body>
+<script>
+    //C1
+    // let chuoi =[-2,4,7,-3,5,-1,3,8,-12];
+    // let count = 0;
+    // for (let  i = 0; i < chuoi.length; i++) {
+    //     if (chuoi[i]<0) {
+    //         count++;
+    //     }
+    // }
+    // alert("Số nguyên âm trong  chuỗi là " + count) ;
+
+
+    //C2
+    let arr2 = [];
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        arr2[i] = +prompt(" Nhập vào các phần tử cần kiểm tra : ")
+        if (arr2[i] < 0) {
+            arr.push(arr2[i]);
+        }
+    }
+
+    alert("Số nguyên âm trong  chuỗi là " + arr.length);
+</script>
+</body>
+</html>
