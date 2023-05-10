@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title> đếm số từ trong một chuỗi</title>
 </head>
 <body>
 <script>
-    let a = +prompt("Nhập sô lượng phần tử  : ");
-    let array = [];
+    let a = prompt(" Nhập chuỗi cần đếm số từ : ");
+    a = a.toString();
     let dem = 0;
-    for (let i = 0; i <= a; i++) {
-        array[i] = prompt("Nhập sô lượng phần tử  : : ");
-        if (isNaN(array[i])) {
+    console.log(a);
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] == ' ') {
             dem++;
+        } else {
+            dem = dem + 0;
         }
     }
-    alert("Số từ trong chuỗi là  : " + dem);
+    dem++;
+    alert("Trong chuỗi vừa nhập có tất cả  : " + dem + " từ .");
+
 </script>
 </body>
 </html>

@@ -6,16 +6,18 @@
 </head>
 <body>
 <script>
-    let a = +prompt("Nhập vào số lượng phần tử  ");
-    let arr = [];
-    let dem = 0;
-    for (let i = 0; i <= a; i++) {
-        arr[i] = +prompt("Nhập : ");
-        if (!isNaN(arr[i])) {
-            dem++;
-        }
-    }
-    alert("Số kí tự có trong mảng là :  " + dem);
+    let a = prompt("Nhập chuỗi cần đếm số ký tự: ");
+    a = a.toString();
+    let dem= 0;
+    console.log(a);
+     for (let i = 0; i < a.length; i++) {
+         if (a[i] != ' ') {
+             dem++;
+         } else {
+            dem=dem+0;
+         }
+     }
+     alert("Số kí tự có trong chuỗi vừa nhập là : "+dem+" kí tự.");
 </script>
 </body>
 </html>

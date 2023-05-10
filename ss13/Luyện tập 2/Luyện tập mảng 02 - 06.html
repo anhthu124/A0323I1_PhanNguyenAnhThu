@@ -7,16 +7,14 @@
 <body>
 <script>
     let arr = prompt('Nhập vào một mảng ký tự:').split('');
-
     // Thay thế ký tự '-' bằng '_'
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === '-') {
             arr[i] = '_';
         }
     }
-
-    // In ra mảng sau khi đã thay thế ký tự '-'
-    console.log("Mảng sau khi thay thế ký tự '-', là: " +arr.join(''));
+    // In ra mảng đã thay thế ký tự '-'
+    console.log("Mảng sau khi thay thế ký tự '-', là: " + arr.join(''));
 </script>
 </body>
 </html>
