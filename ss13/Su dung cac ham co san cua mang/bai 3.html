@@ -6,7 +6,20 @@
 </head>
 <body>
 <script>
-
+    let str = 'The Quick Brown Fox';
+    let chuHoa = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let chuThuong = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+    for (let i = 0; i <= str.length; i++) {
+        if (chuHoa.indexOf(str[i]) !== -1) {
+            result.push(str[i].toLowerCase());
+        } else if (chuThuong.indexOf(str[i]) !== -1) {
+            result.push(str[i].toUpperCase());
+        } else {
+            result.push(str[i]);
+            alert(result.join(''));
+        }
+    }
 </script>
 </body>
 </html>

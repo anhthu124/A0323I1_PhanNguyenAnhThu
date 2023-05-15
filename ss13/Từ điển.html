@@ -12,7 +12,6 @@
 <p><strong>Kết quả: </strong><span id="result"></span></p>
 
 <script>
-    // Tạo một mảng từ điển
     let dictionary = [
         {word: "hello", meaning: "xin chào"},
         {word: "goodbye", meaning: "tạm biệt"},
@@ -24,16 +23,13 @@
     ];
 
     function search() {
-        // Lấy giá trị từ ô input
         let word = document.getElementById("word").value;
-        // Duyệt qua từ điển và tìm kiếm từ
         for (let i = 0; i < dictionary.length; i++) {
             if (dictionary[i].word == word) {
                 document.getElementById("result").innerHTML = dictionary[i].meaning;
                 return; // Kết thúc hàm tìm kiếm
             }
         }
-        // Nếu không tìm thấy
         document.getElementById("result").innerHTML = "Không tìm thấy kết quả";
     }
 </script>

@@ -6,14 +6,11 @@
 </head>
 <body>
 <script>
-    // Khởi tạo mảng số nguyên
+
     let arr = [3, 7, 9, 10, 4, 1, 8, 2, 6, 5];
-    // Nhập phần tử V từ người dùng
     let V = parseInt(prompt("Enter V: "));
-    // Tìm kiếm phần tử V trong mảng
     let index = arr.indexOf(V);
     if (index !== -1) {
-        // Xoá phần tử V khỏi mảng
         arr.splice(index, 1);
         arr.push(0);
         console.log(" Xoá" + {V} + "ra khỏi mảng và mảng mới là " + {arr});
