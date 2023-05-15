@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>tính diện tích-tính chu vi hình tròn</title>
 </head>
 <body>
-$END$
+<script>
+    let r = +prompt(" Nhập cạnh hình tròn.");
+    const PI = 3.14;
+
+    function dienTich() {
+        let S = r * r * PI;
+        return S;
+    }
+
+    function chuVi() {
+        let C = r * 2 * PI;
+        return C;
+    }
+
+    alert(" Chu vi hình tròn =" + chuVi());
+    alert(" Diện tích hình tròn =: " + dienTich());
+</script>
 </body>
 </html>

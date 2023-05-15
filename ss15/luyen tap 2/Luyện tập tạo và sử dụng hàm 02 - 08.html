@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>đảo ngược mảng số nguyên</title>
 </head>
 <body>
-$END$
+<script>
+    let mang = [1, 2, 3, 4, 5];
+    let mangMoi;
+
+    function daoNguoc() {
+        mangMoi = [...mang].reverse();
+
+    }
+
+    daoNguoc();
+    alert(" Mảng số nguyên sau đảo ngược là: " + mangMoi);
+
+</script>
 </body>
 </html>

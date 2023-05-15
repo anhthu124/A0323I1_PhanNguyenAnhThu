@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title> đổi chỗ hai số nguyên</title>
 </head>
 <body>
-$END$
+<script>
+    let a = +prompt(" Nhập số nguyên thứ 1");
+    let b = +prompt(" Nhập số nguyên thứ 2");
+
+    function swapIntegers() {
+        [a, b] = [b, a];
+        return [a, b];
+    }
+
+    alert(" Hai số nguyên sau khi đổi chổ là :" + swapIntegers())
+
+</script>
 </body>
 </html>

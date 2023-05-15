@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Chuyển đổi giữa feet và meters</title>
 </head>
 <body>
-$END$
+<script>
+
+
+    function footToMeter(number) {
+        let meter = 0.305 * number;
+        return meter;
+    }
+
+    function meterToFoot(number) {
+        let foot = 3.279 * number;
+        return foot;
+    }
+
+    alert(footToMeter(9));
+    alert(meterToFoot(0.610));
+</script>
 </body>
 </html>

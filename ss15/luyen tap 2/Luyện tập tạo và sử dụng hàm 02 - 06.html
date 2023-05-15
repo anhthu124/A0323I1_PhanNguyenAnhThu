@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Kiểm tra số nguyên dương</title>
 </head>
 <body>
-$END$
+<script>
+    let number = +prompt(" Nhập số nguyên cần kiểm tra.");
+
+    function kiemTra() {
+        if (number > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    alert(kiemTra());
+</script>
 </body>
 </html>

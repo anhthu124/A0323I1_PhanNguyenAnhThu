@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Tra về số nguyên có giá trị nhỏ nhấttle</title>
 </head>
 <body>
-$END$
+<script>
+    let number1 = +prompt(" Nhập số nguyên thứ 1");
+    let number2 = +prompt(" Nhập số nguyên thứ 2");
+    let number3 = +prompt(" Nhập số nguyên thứ 3");
+
+    function GTNN() {
+        return Math.min(number1, number2, number3);
+    }
+
+    alert(" Giá trị nhỏ nhất trong 3 số vừa nhập là : " + GTNN());
+
+</script>
 </body>
 </html>

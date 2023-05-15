@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title> kiểm tra xem ký tự nhập</title>
 </head>
 <body>
-$END$
+<script>
+
+    //cách 1
+    let kiTu = prompt(" Nhập kí tự cần kiểm tra.");
+
+    function kiemtra(kiTu) {
+
+        if (isNaN(kiTu)) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    alert(kiemtra(kiTu));
+
+
+    //cách 2
+    // let tu = prompt("Nhap vao 1 bien bat ky : ");
+    //     if (tu >= "0" && tu <= "9") {
+    //         alert(tu + " la ki tu so");
+    //     } else {
+    //         alert(tu + " la ki tu chu");
+    //     }
+    //
+
+
+</script>
 </body>
 </html>

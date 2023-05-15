@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title> Hàm kiểm tra số nguyên tố</title>
 </head>
 <body>
-$END$
+<script>
+    function isPrimr(number) {
+        if (number < 2) {
+            return false;
+        } else {
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    alert(isPrimr(13));
+    alert(isPrimr(15));
+    alert(isPrimr(17));
+</script>
 </body>
 </html>

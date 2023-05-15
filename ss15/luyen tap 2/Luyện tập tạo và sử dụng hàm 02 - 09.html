@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>trả về số lần xuất hiện của ký tự</title>
 </head>
 <body>
-$END$
+<script>
+    let mang = ['a', 'b', 'c', 'a', 'd'];
+    let kiTu = prompt(" Nhập kí tự cần kiểm tra.")
+
+    function kiemTra() {
+        let count = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] === kiTu) {
+                count++;
+            }
+        }
+        if (count == 0) {
+            alert("Kí tự không nằm trong mảng.(-1)")
+        } else {
+            alert(" Số lần kí tự xuất hiện trong mảng là:" + count)
+        }
+    }
+
+    kiemTra();
+</script>
 </body>
 </html>
