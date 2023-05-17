@@ -11,13 +11,11 @@
     let dem = 0;
     console.log(a);
     for (let i = 0; i < a.length; i++) {
-        if (a[i] != ' ') {
+        if (!isNaN(a[i]) && a[i] != ' ') {
             dem++;
-        } else {
-            dem = dem + 0;
         }
     }
-    alert("Số kí tự có trong chuỗi vừa nhập là : " + dem + " kí tự.");
+    alert("Số kí tự số có trong chuỗi vừa nhập là : " + dem + " kí tự.");
 </script>
 </body>
 </html>

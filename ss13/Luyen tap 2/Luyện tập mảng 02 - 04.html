@@ -7,18 +7,12 @@
 <body>
 <script>
     let a = prompt(" Nhập chuỗi cần đếm số từ : ");
-    a = a.toString();
-    let dem = 0;
-    console.log(a);
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] == ' ') {
-            dem++;
-        } else {
-            dem = dem + 0;
-        }
+    if (typeof a !== 'string' || a.trim() === '') {
+        alert("Vui lòng nhập một chuỗi hợp lệ.");
+
     }
-    dem++;
-    alert("Trong chuỗi vừa nhập có tất cả  : " + dem + " từ .");
+    let tu = a.trim().split(/\s+/);
+    alert("Trong chuỗi vừa nhập có tất cả  : " + tu.length + " từ .");
 
 </script>
 </body>
