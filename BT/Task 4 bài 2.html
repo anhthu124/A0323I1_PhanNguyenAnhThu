@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số lượng sâu ký tự</title>
+</head>
+<body>
+<script>
+    let xauKyTu1 = prompt(" Nhập xâu ký tự cần tìm số ký  tự chung : ");
+    xauKyTu1.split();
+    console.log(xauKyTu1);
+    let xauKyTu2 = new Array();
+    xauKyTu2.push(xauKyTu1[0]);
+    debugger
+    for (let i = 0; i < xauKyTu1.length; i++) {
+        let flag = true;
+        for (let j = 0; j < xauKyTu2.length; j++) {
+            if (xauKyTu1[i] == xauKyTu2[j]) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag === true) {
+            xauKyTu2.push(xauKyTu1[i]);
+        }
+    }
+    document.write(" Các ký tự khác nhau là : " + xauKyTu2);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sua van ban</title>
+</head>
+<body>
+<script>
+    let kyTu = prompt("Nhập xâu ký tự:");
+
+    function kiemTra(kyTu) {
+        let array = "";
+        for (let i = 0; i < kyTu.length; i++) {
+            if (kyTu[i] !== " ") {
+                if (kyTu[i - 1] === " " || i === 0) {
+                    array += kyTu[i].toUpperCase();
+                } else {
+                    array += kyTu[i].toLowerCase();
+                }
+            } else {
+                if (kyTu[i + 1] !== " ") {
+                    array += kyTu[i];
+                }
+            }
+        }
+        return array;
+    }
+
+    let newString = kiemTra(kyTu)
+    alert("Xâu kí tự trước khi chuẩn hoá: " + kyTu);
+    alert("Xâu kí tự sau khi chuẩn hoá  : " + newString);
+</script>
+</body>
+</html>

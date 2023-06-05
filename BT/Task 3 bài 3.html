@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tuSo = [5, 2, 5];
+    let mauSo = [6, 3, 4];
+    let max = tuSo[0] / mauSo[0];
+    let x, a, b, c;
+
+    function maxFraction() {
+        for (let i = 0; i < tuSo.length; i++) {
+            x = tuSo[i] / mauSo[i];
+            if (x > max) {
+                max = x;
+                a = tuSo[i];
+                b = mauSo[i];
+                c = i;
+            }
+        }
+        return a + "/" + b + " có chỉ số là : " + c;
+    }
+
+
+    alert(maxFraction())
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ky tu chung</title>
+</head>
+<body>
+<script>
+    let dem = 0;
+    let xauKyTu1 = prompt("Nhap vao chuoi ki tu dau tien : ");
+    let array1 = [];
+    for (let i = 0; i < xauKyTu1.length; i++) {
+        array1[i] = xauKyTu1.slice(i, i + 1);
+    }
+
+    alert(array1);
+    let xauKyTu2 = prompt("Nhap vao chuoi ki tu thu hai :");
+    let array2 = [];
+    for (let j = 0; j < xauKyTu2.length; j++) {
+        array2[j] = xauKyTu2.slice(j, j + 1);
+    }
+    alert(array2);
+
+    for (let a = array1.length - 1; a >= 0; a--) {
+        for (let b = array2.length - 1; b >= 0; b--) {
+            if (array1[a] === array2[b]) {
+                array1.splice(a, 1);
+                array2.splice(b, 1);
+                dem++;
+            }
+        }
+    }
+    alert("Số ký tự chung của cả 2 xâu ký tự là  :  " + dem);
+</script>
+</body>
+</html>

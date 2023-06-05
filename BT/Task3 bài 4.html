@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 0;
+    let sum = 0;
+    let check;
+    do {
+        let menu = +prompt("Lựa chọn thức uống và nhập vào số thự tự của thức uống bạn muốn mua: " + '\n' + '1 Cafe' + '\n' + '2 Cam vắt' + '\n' + '3 Nước ép cà rốt' + '\n' + '4 Nước ép cà chua ' + '\n' + '5 Nước lọc' + '\n' + '6 Nước dừa' + '\n' + '7 Kết thúc quá trình order');
+        switch (menu) {
+            case 1:
+                a = 15000;
+                b = prompt("Đơn giá : " + a + `\n` + "Nhập vào số lượng ly muốn mua: ");
+                sum = a * bmi;
+                document.write("Số tiền phải trả cho cafe là : " + sum + "<br>");
+                check = true;
+                break;
+            case 2:
+                a = 15000;
+                b = prompt("Đơn giá : " + a + `\n` + " Nhập vào số lượng ly muốn mua: ");
+                sum = a * b;
+                document.write("Số tiền phải trả cho cam vắt là : " + sum + "<br>");
+                check = true;
+                break;
+            case 3:
+                a = 10000;
+                b = prompt("Đơn giá : " + a + `\n` + "Nhập vào số lượng ly muốn mua: ");
+                sum = a * b;
+                document.write("Số tiền phải trả cho nước ép cà rốt là : " + sum + "<br>");
+                check = true;
+                break;
+            case 4:
+                a = 10000;
+                b = prompt("Đơn giá : " + a + `\n` + "Nhập vào số lượng ly muốn mua: ");
+                sum = a * b;
+                document.write("Số tiền phải trả cho nước ép cà chua là : " + sum + "<br>");
+                check = true;
+                break;
+            case 5:
+                a = 7000;
+                b = prompt("Đơn giá : " + a + `\n` + "Nhập vào số lượng ly muốn mua: ");
+                sum = a * b;
+                document.write("Số tiền phải trả nước lọc là : " + sum + "<br>");
+                check = true;
+                break;
+            case 6:
+                a = 25000;
+                b = prompt("Đơn giá : " + a + `\n` + "Nhập vào số lượng ly muốn mua: ");
+                sum = a * b;
+                document.write("Số tiền phải trả nước dừa là : " + sum + "<br>");
+                check = true;
+                break;
+            case 7:
+                document.write("Cảm ơn quý khách.");
+                check = false;
+                break;
+        }
+    } while (check == true)
+
+</script>
+</body>
+</html>
