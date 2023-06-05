@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function veTamGiacCanDac(h) {
+        let result = "";
+
+        for (let i = 1; i <= h; i++) {
+            for (let j = 1; j <= h - i; j++) {
+                result += " ";
+            }
+
+            for (let j = 1; j <= 2 * i - 1; j++) {
+                result += "*";
+            }
+
+            result += "\n";
+        }
+
+        return result;
+    }
+
+
+    let h = parseInt(prompt("Nhập chiều cao của tam giác muốn vẽ: "));
+
+
+    let tamGiac = veTamGiacCanDac(h);
+
+    document.write(tamGiac);
+</script>
+
+</body>
+</html>
