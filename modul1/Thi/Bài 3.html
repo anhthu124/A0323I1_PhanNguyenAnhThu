@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên tố</title>
+</head>
+<body>
+<script>
+    let arrLength = +prompt(" Mảng có số phần tử là :");
+
+    function Create_Arr(arrlenght) {
+        let arr = [];
+        for (let i = 0; i < arrlenght; i++) {
+            arr[i] = +prompt(" Nhập phần tử thứ: " + (i + 1));
+        }
+        return arr;
+    }
+
+    let arrNumbers = Create_Arr(arrLength);
+
+
+    function Find_primes(arr) {
+        let newArr = [];
+        for (let i = 0; i < arr.length; i++) {
+            let count = 0;
+            for (let n = 1; n < arr[i]; n++) {
+                if (arr[i] % n === 0) {
+                    count++;
+                }
+            }
+            if (count === 1) {
+                newArr.push(arr[i]);
+            }
+        }
+        return newArr;
+    }
+
+    let arrPrimes = Find_primes(arrNumbers);
+    if (arrPrimes.length === 0) {
+        alert("Mảng vừa nhập không có số nguyên tố !!!")
+    } else {
+        alert(" Các số nguyên tố  có trong mảng vừa nhập là : " + '[' + arrPrimes + ']');
+    }
+</script>
+</body>
+</html>

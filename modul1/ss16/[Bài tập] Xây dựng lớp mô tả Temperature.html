@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(celsius) {
+            if(celsius < -273) throw new Error('Temperature below absolute zero is not possible.');
+
+            this.celsius = celsius;
+        }
+
+        getCelsius() {
+            return this.celsius;
+        }
+
+        getFahrenheit() {
+            return this.celsius * 9/5 + 32;
+        }
+
+        getKelvin() {
+            return this.celsius + 273.15;
+        }
+    }
+    const temp = new Temperature(25);
+
+    console.log("Celsius: "+temp.getCelsius());
+    console.log("Fahrenheit:"+temp.getFahrenheit());
+    console.log("Kelvin: "+temp.getKelvin());
+
+</script>
+</body>
+</html>

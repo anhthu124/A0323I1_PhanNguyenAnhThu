@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liệt kê và đếm các số nguyên tố có trong mảng</title>
+</head>
+<body>
+<script>
+    let ngang = prompt(" Nhập số  hàng ngang ");
+    let doc = prompt(" nhập số hàng dọc ");
+    let matran = new Array(ngang);
+    for (let i = 0; i < matran.length; i++) {
+        matran[i] = new Array(doc);
+        for (let j = 0; j < matran[i].length; j++) {
+            matran[i][j] = Math.floor(Math.random() * 10);
+           }
+        }
+    for (let i = 0; i <matran.length ; i++) {
+        for(let j=0;j<matran[i].length;j++){
+            document.writeln(maTran[i][j]);
+        }
+        document.writeln("<br>")
+    }
+
+
+    function xetSoNguyenTo(a) {
+        let dem = 0;
+        if (a < 2) {
+            return false;
+        }
+        if (a > 2) {
+            for (let i = 2; i < a; i++) {
+                if (a % i == 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+
+    function tongSNT(maTran) {
+        let dem = 0;
+        for (let i = 0; i < maTran.length; i++) {
+            for (let j = 0; j < maTran[i].length; j++) {
+                if (xetSoNguyenTo(maTran[i][j]) == true) {
+                    dem++;
+                }
+            }
+        }
+        return dem;
+    }
+document.write( " các số nguyên tố có trong ma trận là : " + tongSNT(matran))
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>coCaro</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    let arr = new Array(12);
+    for (let i = 0; i < arr.length - 2; i++) {
+        arr[i] = new Array(12)
+        for (let j = 0; j < arr[i].length - 2; j++) {
+            arr[i][j] = "";
+        }
+    }
+    let checkPlayer1 = true;
+    display();
+
+    function display() {
+        let tableString = '<table border="1">';
+        for (let i = 0; i < arr.length - 2; i++) {
+            tableString += '<tr>';
+            for (let j = 0; j < arr[i].length - 2; j++) {
+                tableString += '<td onclick="played(' + i + ',' + j + ')" style="width: 30px;height: 30px">' + arr[i][j] + '</td>';
+            }
+            tableString += ' </tr>';
+        }
+        tableString += '</table>';
+        document.getElementById("result").innerHTML = tableString;
+
+    }
+
+    function played(i, j) {
+        // cách  hiện địa chỉ từng ô
+        //alert(i+','+j);
+        //nếu là người chơi 1 true và ô chọn không chứa dữ liệu thì được phép đánh X
+        if (checkPlayer1 && isNotDate(i, j)) {
+            arr[i][j] = "X";
+            checkPlayer1 = false;
+            if (checkWin(i, j) === true) {
+                alert("người X chiến thắng")
+            }
+        } else if (!checkPlayer1 && isNotDate(i, j)) {
+            arr[i][j] = "O";
+            checkPlayer1 = true;
+        }
+        display();
+    }
+
+    function isNotDate(i, j) {
+        if (arr[i][j] == "") {
+            return true;
+        } else {
+            alert("đã đánh ô này !!!")
+            return false;
+        }
+    }
+
+    function checkWin(i, j) {
+        for (let i = 0; i < arr.length - 2; i++) {
+            for (let j = 0; j < arr[i].length - 2; j++) {
+                if (arr[i][j] == "X") {
+                    if (arr[i][j + 1] == "X" && arr[i][j + 2] == "X") {
+                        return true;
+                    }
+                    if (arr[i + 1][j] == "X" && arr[i + 2][j] == "X") {
+                        return true;
+                    }
+                    if (arr[i + 1][j + 1] == "X" && arr[i + 2][j + 2] == "X") {
+                        return true;
+                    }
+                    if (arr[i + 1][j - 1] == "X" && arr[i + 2][j - 2] == "X") {
+                        return true;
+                    }
+                } else if (arr[i][j] == "O") {
+
+                }
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

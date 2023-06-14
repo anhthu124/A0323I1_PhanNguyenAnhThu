@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<body>
+<h2>Oppo</h2>
+<p>Trạng Thái : <samp id="nokia"></samp></p>
+<textarea cols="80" rows="5" id="hienthi"></textarea><br/>
+<input type="button" onclick="battat()" value="Bật & Tắt"/>
+<input type="button" onclick="sacdienthoai()" value="Sạc pin điện thoại"/>
+<input type="button" onclick="soan()" value="Soạn tin nhắn"/>
+<input type="button" onclick="hopthuden()" value="Thông báo tin nhắn"/>
+<input type="button" onclick="hopthudi()" value="Tin nhắn đã gửi"/>
+<input type="button" onclick="gui()" value="Gửi tin nhắn"/><br/><br/>
+<h2>Iphone</h2><br/>
+<p>Trạng Thái : <samp id="iphone"></samp></p>
+<textarea cols="80" rows="5" id="hienthi_ip"></textarea><br/>
+<input type="button" onclick="battat_ip()" value="Bật & Tắt"/>
+<input type="button" onclick="sacdienthoai_ip()" value="Sạc pin điện thoại"/>
+<input type="button" onclick="soan_ip()" value="Soạn tin nhắn"/>
+<input type="button" onclick="hopthuden_ip()" value="Thông báo tin nhắn"/>
+<input type="button" onclick="hopthudi_ip()" value="Tin nhắn đã gửi"/>
+
+<input type="button" onclick="gui_ip()" value="Gửi tin nhắn"/>
+<script>
+    function Mobile(dienthoai, pin) {
+        this.pin = pin;
+        this.nhap = [];
+        this.thuDen = [];
+        this.thuDi = [];
+        this.checkphone = function () {
+            if (this.kiemtrabattat) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+        this.bat_tat = function () {
+            if (this.checkphone()) {
+                this.kiemtrabattat = false;
+            } else {
+                this.kiemtrabattat = true;
+            }
+        };
+        this.dungpin = function () {
+            if (this.pin > 0) {
+                this.pin--;
+            }
+        };
+        this.sacpin = function () {
+            if (this.pin < 100) {
+                this.pin++;
+            }
+        };
+
+        this.getpin = function () {
+            return this.pin;
+        };
+        this.luuNhap = function (value) {
+            this.nhap.push(value);
+        };
+        this.getnhap = function () {
+            return this.nhap;
+        };
+        this.hopThuDen = function (value) {
+            this.thuDen.push(value);
+        };
+        this.getThuDen = function () {
+            return this.thuDen;
+        };
+        this.hopThuDi = function (value) {
+            this.thuDi.push(value);
+        };
+        this.getThuDi = function () {
+            return this.thuDi;
+        };
+        this.kiemTraDienThoai = function () {
+            if (this.pin === 0) {
+                return false;
+            }
+            return true;
+        }
+    }
+
+    let iphone = new Mobile("Iphone", 100);
+    let oppo = new Mobile("Oppo", 100);
+
+    function value(str) {
+        return document.getElementById(str).value;
+    }
+
+    function battat() {
+        oppo.bat_tat();
+        oppo.dungpin();
+        showoppo();
+    }
+
+    function battat_ip() {
+        iphone.bat_tat();
+        iphone.dungpin();
+        showiphone();
+    }
+
+    function showoppo() {
+        let a = oppo.checkphone() ? "bật" : "tắt";
+        document.getElementById("oppo").innerHTML = a + "<br/>" + oppo.getpin() + "%";
+    }
+
+    function showiphone() {
+        let a = iphone.checkphone() ? "bật" : "tắt";
+        document.getElementById("iphone").innerHTML = a + "<br/>" + iphone.getpin() + "%";
+
+    }
+
+    function sacdienthoai() {
+        oppo.sacpin();
+        showoppo();
+    }
+
+    function sacdienthoai_ip() {
+        iphone.sacpin();
+        showiphone()
+    }
+
+    function soan() {
+        if (oppo.kiemTraDienThoai() && oppo.checkphone()) {
+            oppo.dungpin();
+            showoppo();
+            oppo.luuNhap(value("hienthi"));
+        } else {
+            alert("moi bat may hoac bi het pin")
+        }
+
+
+    }
+
+    function nhap() {
+        if (oppo.kiemTraDienThoai() && oppo.checkphone()) {
+            oppo.dungpin();
+            showoppo();
+            document.getElementById("hienthi").value = " ";
+            for (let i = 0; i < oppo.nhap.length; i++) {
+                document.getElementById("hienthi").value += i + " " + oppo.getnhap()[i];
+            }
+        } else {
+            alert("moi bat may hoac bi het pin")
+        }
+    }
+
+    function soan_ip() {
+        if (iphone.kiemTraDienThoai() && iphone.checkphone()) {
+            iphone.dungpin();
+            showiphone();
+            iphone.luuNhap(value("hienthi1"));
+        } else {
+            alert("moi bat may hoac bi het pin")
+        }
+    }
+
+    function gui() {
+        if (oppo.kiemTraDienThoai() && oppo.checkphone()) {
+            oppo.dungpin();
+            showoppo();
+            document.getElementById("hienthi1").value = document.getElementById("hienthi").value;
+            iphone.hopThuDen(value("hienthi1"));
+
+        } else {
+            alert("moi bat may hoac bi het pin")
+        }
+    }
+
+    function gui_ip() {
+        if (iphone.kiemTraDienThoai() && iphone.checkphone()) {
+            iphone.dungpin();
+            showiphone();
+            document.getElementById("hienthi").value = document.getElementById("hienthi1").value;
+            oppo.hopThuDen(value("hienthi"));
+        } else {
+            alert("moi bat may hoac bi het pin")
+        }
+    }
+
+    function hopthuden() {
+        if (oppo.kiemTraDienThoai() && oppo.checkphone()) {
+            oppo.dungpin();
+            showoppo();
+            document.getElementById("hienthi").value = " ";
+            for (let i = 0; i < oppo.thuDen.length; i++) {
+                document.getElementById("hienthi").value += i + " " + oppo.getThuDen()[i];
+            }
+        } else {
+            alert("moi bat may hoac bi het pin")
+        }
+    }
+
+    function hopthuden_ip() {
+        if (iphone.kiemTraDienThoai() && iphone.checkphone()) {
+            iphone.dungpin();
+            showiphone();
+            for (let i = 0; i < iphone.thuDen.length; i++) {
+                document.getElementById("hienthi1").value += i + " " + iphone.getThuDen()[i];
+            }
+        } else {
+            alert("moi bat may hoac bi het pin")
+        }
+    }
+
+    function hopthudi() {
+        if (oppo.kiemTraDienThoai() && oppo.checkphone()) {
+            oppo.dungpin();
+            showoppo();
+            document.getElementById("hienthi").value = " ";
+            oppo.hopThuDi(value("hienthi1"));
+            for (let i = 0; i < oppo.thuDi.length; i++) {
+                document.getElementById("hienthi").value += i + " " + oppo.getThuDi()[i];
+            }
+        } else {
+            alert("moi bat may hoac bi het pin")
+        }
+    }
+
+    function hopthudi_ip() {
+        if (iphone.kiemTraDienThoai() && iphone.checkphone()) {
+            iphone.dungpin();
+            showiphone();
+            document.getElementById("hienthi1").value = " ";
+            iphone.hopThuDi(value("hienthi"));
+            for (let i = 0; i < iphone.thuDi.length; i++) {
+                document.getElementById("hienthi1").value += i + " " + iphone.getThuDi()[i];
+            }
+        } else {
+            alert("moi bat may hoac bi het pin")
+        }
+    }
+</script>
+</body>
+</body>
+</html>

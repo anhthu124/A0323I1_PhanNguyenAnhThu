@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TỔng các số chẵn</title>
+</head>
+<body>
+<script>
+    let ngang = prompt(" Nhập số  hàng ngang ");
+    let doc = prompt(" nhập số hàng dọc ");
+    let tong = 0;
+    let matran = [];
+    for (let i = 0; i < ngang; i++) {
+        matran[i] = [];
+        document.write("<br>");
+        for (let j = 0; j < doc; j++) {
+            matran[i][j] = Math.floor(Math.random() * 10);
+            document.write("  ");
+            document.write(matran[i][j]);
+            if (matran[i][j] % 2 === 0) {
+                tong += matran[i][j]
+            }
+        }
+    }
+    document.write("<br>" + " Tổng các số chẳn trong ma trận là : " + tong)
+</script>
+</body>
+</html>

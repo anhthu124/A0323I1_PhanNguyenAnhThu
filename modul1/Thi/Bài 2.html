@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số lượng ký tự in hoa trong chuỗi</title>
+</head>
+<body>
+<script>
+
+    let strInput = prompt("Nhập chuỗi ký tự");
+
+    function Dem_in_hoa(str) {
+        let dem = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (isNaN(str[i]) && str[i] === str[i].toUpperCase() && str[i] !== ' ') {
+                dem++;
+            }
+        }
+        if (dem === 0) {
+            alert(" The String is not contain upper char.");
+        } else {
+            alert(dem);
+        }
+    }
+
+    Dem_in_hoa(strInput);
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lớp mô tả điện thoại </title>
+</head>
+<body>
+<script>
+
+    class Mobile {
+        constructor() {
+            this.battery = 100; // pin
+            this.drafts = []; // soạn tin nhắn
+            this.inbox = []; // thư đến
+            this.sent = []; // thư đã gửi
+            this.powerOn = false; // bật tắt pin
+        }
+
+        checkBattery() {
+            return this.battery; // kiểm tra trạng thái pin
+        }
+
+        powerSwitch() {
+            if (this.powerOn) {
+                console.log("Tắt điện thoại."); // tắt điện thoại
+                this.powerOn = false;
+            } else {
+                console.log("Bật điện thoại "); // bật điện thoại
+                this.powerOn = true;
+            }
+        }
+
+        chargeBattery() {
+            console.log("Sạc pin .");
+            this.battery = 100; // xạc pin điện thoại
+        }
+
+        composeMessage(message) {
+            if (!this.powerOn) {
+                console.log("Kiểm tra trạng thái đt."); // kiểm tra trạng thái điện thoại
+                return;
+            }
+
+            console.log(`Soạn tin nhắn "${message}"`); // soạn tin nhắn
+            this.drafts.push(message); // lưu tin nhắn vào vùng nhớ để lưu tin nhắn đang soạn thảo
+            this.battery -= 1; // giảm năng lượng pin khi đã sử dụng chức năng
+        }
+
+        receiveMessage(message) {
+            if (!this.powerOn) {
+                console.log("Please turn on the phone to receive messages."); // kiểm tra trạng thái điện thoại
+                return;
+            }
+
+            console.log(`Receiving message "${message}"`); // nhận tin nhắn từ một chiếc mobile khác
+            this.inbox.push(message); // lưu tin nhắn vào vùng nhớ để lưu tin nhắn trong hộp thư đến
+            this.battery -= 1; // giảm năng lượng pin khi đã sử dụng chức năng
+        }
+
+        sendMessage(message, mobile) {
+            if (!this.powerOn) {
+                console.log("Please turn on the phone to send messages."); // kiểm tra trạng thái điện thoại
+                return;
+            }
+
+            console.log(`Sending message "${message}"`); // gửi tin nhắn tới một chiếc mobile khác
+            mobile.receiveMessage(message); // gọi phương thức nhận tin nhắn trên đối tượng mobile khác
+            this.sent.push(message); // lưu tin nhắn vào vùng nhớ để lưu tin nhắn đã gửi
+            this.battery -= 1; // giảm năng lượng pin khi đã sử dụng chức năng
+        }
+
+        checkInbox() {
+            if (!this.powerOn) {
+                console.log("Please turn on the phone to check inbox."); // kiểm tra trạng thái điện thoại
+                return;
+            }
+
+            console.log("Checking inbox."); // xem tin trong hộp thư đến
+            console.log(this.inbox); // hiển thị tin nhắn trong hộp thư đến
+            this.battery -= 1; // giảm năng lượng pin khi đã sử dụng chức năng
+        }
+
+        checkSent() {
+            if (!this.powerOn) {
+                console.log("Please turn on the phone to check sent messages."); // kiểm tra trạng thái điện thoại
+                return;
+            }
+
+            console.log("Checking sent messages."); // xem tin đã gửi
+            console.log(this.sent); // hiển thị tin nhắn đã gửi
+            this.battery -= 1; // giảm năng lượng pin khi đã sử dụng chức năng
+        }
+    }
+
+    let nokia = new Mobile();
+    let iphone = new Mobile();
+    nokia.composeMessage("Hello from Nokia!");
+    nokia.sendMessage("Hello from Nokia!", iphone);
+    iphone.checkInbox();
+
+</script>
+</body>
+</html>

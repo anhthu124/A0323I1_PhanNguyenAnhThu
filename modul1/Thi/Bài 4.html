@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lớp điện thoại</title>
+</head>
+<body>
+<h2>Quản lý điện thoại</h2>
+<form>
+    Mã điện thoại: <input type="text" id="model">
+    &nbsp;Tên: <input type="text" id="name">
+    &nbsp;Hãng: <input type="text" id="brand">
+    &nbsp;Giá: <input type="number" id="price">
+    <input onclick="addMobile()" type="button" value="Thêm mới điện thoại">
+
+    <div><p id="result"></p></div>
+    </div>
+</form>
+<p id="hienThi"></p>
+</body>
+<script>
+    class Mobile {
+        constructor(model, name, brand, price) {
+            this.model = model;
+            this.name = name;
+            this.brand = brand;
+            this.price = price;
+        }
+
+        getModel() {
+            return this.model;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getBrand() {
+            return this.brand;
+        }
+
+        getPrice() {
+            return this.price;
+        }
+
+        setModel(value) {
+            this.model = value;
+        }
+
+        setName(value) {
+            this.name = value;
+        }
+
+        setBrand(value) {
+            this.brand = value;
+        }
+
+        setPrice(value) {
+            this.price = value;
+        }
+
+        toString() {
+            document.write("Thông tin về máy:" + "<br>Mã điện thoại: " + this.getModel() + "<br>Tên: " + this.getName() + "<br>Nhà sản xuất: " + this.getBrand() + "<br>Giá: " + this.getPrice() + '$')
+        }
+
+    }
+
+
+    let list = [];
+    let mobile1 = new Mobile(101, "SamSung", "Viet Nam", 20000000);
+    let mobile2 = new Mobile(102, "Iphone", "Viet Nam", 25000000);
+    let mobile3 = new Mobile(103, "Oppo", "Viet Nam", 16000000);
+    list.push(mobile1, mobile2, mobile3);
+
+    function addMobile() {
+        let model = document.getElementById('model').value;
+        let name = document.getElementById('name').value;
+        let brand = document.getElementById('brand').value;
+        let price = document.getElementById('price').value;
+        let newMobile = new Mobile(model, name, brand, price);
+        list.push(newMobile);
+        display(list);
+    }
+
+
+    function display(arr) {
+        let data = '<br><h2>Danh sách điện thoại</h2><table border="1">'
+            + '<tr>'
+            + '<th>Mã điện thoại </th>'
+            + '<th>Tên</th>'
+            + '<th>Nhà sản xuất</th>'
+            + '<th>Giá</th>'
+            + '</tr>';
+        for (let i = 0; i < arr.length; i++) {
+            data += '<tr \n' +
+                +'<th>' + (i + 1) + '</th>'
+                + '<th>' + arr[i].getModel() + '</th>'
+                + '<td>' + arr[i].getName() + '</td>'
+                + '<td>' + arr[i].getBrand() + '</td>'
+                + '<td>' + arr[i].getPrice() + '</td>'
+                + '</tr>';
+        }
+        data += "<table>\n";
+        document.getElementById("hienThi").innerHTML = data;
+    }
+
+    display(list);
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo mảng tính hiệu tổng các số chẵn và Tổng các số lẻ </title>
+</head>
+<body>
+<script>
+    do {
+        numbers = +prompt(" Mảng có số phần tử là : ");
+        if (numbers > 20) {
+            alert("Số phần tử không được vượt quá 20 !!!");
+        }
+    } while (numbers > 20)
+
+    function Create_arr(number) {
+        let arrayNumbers = [];
+        for (let i = 0; i < number; i++) {
+            arrayNumbers[i] = +prompt(" Nhập phần tử thứ " + (i + 1) + " : ");
+        }
+        document.write("Mảng đã tạo là : " + '[' + arrayNumbers + ']');
+        return arrayNumbers;
+    }
+
+    let arrayNumber = Create_arr(numbers);
+
+    function Minus_even_odd(arr) {
+        let sumOdds = 0;
+        let sumEvens = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                sumEvens += arr[i];
+            } else {
+                sumOdds += arr[i];
+            }
+        }
+        document.write("<br> Tổng các số chẵn là: " + sumEvens + " <br>Tổng các số lẻ là: " + sumOdds + "<br>Hiệu của tổng số chẵn và tổng số lẻ là: " + (sumEvens - sumOdds));
+    }
+
+    Minus_even_odd(arrayNumber);
+
+</script>
+</body>
+</html>
