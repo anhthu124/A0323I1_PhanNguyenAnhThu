@@ -1,6 +1,6 @@
 package ss5.BT.AccessModifier;
 
-public class Cricle {
+public class Circle {
     private double radius;
     private String color;
 

@@ -1,2 +1,4 @@
-package ss10.BaiTap;public class TrienKhaiCacPhuongThucCuaArrayListTheoThuVien {
+package ss10.BaiTap;
+
+public class TrienKhaiCacPhuongThucCuaArrayListTheoThuVien {
 }
