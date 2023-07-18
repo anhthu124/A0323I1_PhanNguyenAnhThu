@@ -8,13 +8,13 @@ public class TongDuongCheoMaTranVuong {
         int sum1 = 0;
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter the edge of matrix");
+        System.out.println("Nhập cạnh của ma trận");
         int edge = input.nextInt();
         int[][] matrix = new int[edge][edge];
 
         for (int i = 0; i < edge; i++) {
             for (int j = 0; j < edge; j++) {
-                System.out.println("Enter element at index [" + i + "]" + "[" + j + "]");
+                System.out.println("Nhập phần tử tại chỉ mục [" + i + "]" + "[" + j + "]");
                 matrix[i][j] = input.nextInt();
             }
         }
@@ -25,6 +25,6 @@ public class TongDuongCheoMaTranVuong {
         }
 
 
-        System.out.println("Total diagonal from left to right = " + sum1);
+        System.out.println("Tổng đường chéo từ trái sang phải = " + sum1);
     }
 }

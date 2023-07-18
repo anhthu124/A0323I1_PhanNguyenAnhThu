@@ -41,7 +41,7 @@ public class Bai1XayDungLopQuadraticEquation {
 
         public double getDiscriminant() {
             double delta;
-            return delta=2*b-4*a*c;
+            return delta = 2 * b - 4 * a * c;
         }
     }
 

@@ -1,57 +1,58 @@
 package ss6KeThua.LopPointVaMoveablePoint;
+
 public class MoveablePoint {
-        private float xSpeed = 0.0f;
-        private float ySpeed = 0.0f;
+    private float xSpeed = 0.0f;
+    private float ySpeed = 0.0f;
 
-        public MoveablePoint() {
+    public MoveablePoint() {
 
-        }
-        public MoveablePoint(float xSpeed,float ySpeed) {
-            this.xSpeed =xSpeed;
-            this.ySpeed = ySpeed;
-        }
+    }
 
-        public MoveablePoint(float x, float y, float xSpeed, float ySpeed) {
-            super(x,y);
-            this.xSpeed = xSpeed;
-            this.ySpeed = ySpeed;
-        }
+    public MoveablePoint(float xSpeed, float ySpeed) {
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+    }
 
-        public float getxSpeed() {
-            return this.xSpeed;
-        }
+    public MoveablePoint(float x, float y, float xSpeed, float ySpeed) {
+        super(x, y);
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+    }
 
-        public void setxSpeed(float xSpeed) {
-            this.xSpeed = xSpeed;
-        }
+    public float getxSpeed() {
+        return this.xSpeed;
+    }
 
-        public float getySpeed() {
-            return this.ySpeed;
-        }
+    public void setxSpeed(float xSpeed) {
+        this.xSpeed = xSpeed;
+    }
 
-        public void setySpeed(float ySpeed) {
-            this.ySpeed = ySpeed;
-        }
+    public float getySpeed() {
+        return this.ySpeed;
+    }
 
-        public float[] getSpeed() {
-            float[] speed = {getxSpeed(), getySpeed()};
-            return speed;
-        }
+    public void setySpeed(float ySpeed) {
+        this.ySpeed = ySpeed;
+    }
 
-        public void setSpeed(float xSpeed, float ySpeed) {
-            this.xSpeed = xSpeed;
-            this.ySpeed = ySpeed;
-        }
+    public float[] getSpeed() {
+        float[] speed = {getxSpeed(), getySpeed()};
+        return speed;
+    }
 
-        public String toString() {
-            return "( " + getX() + ", " + getY() + " ) " + "speed = ( " + getxSpeed() + ", " + getySpeed() + " )";
-        }
+    public void setSpeed(float xSpeed, float ySpeed) {
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+    }
 
+    public String toString() {
+        return "( " + getX() + ", " + getY() + " ) " + "speed = ( " + getxSpeed() + ", " + getySpeed() + " )";
+    }
 
 
     public String move() {
-            setX(getX() + getxSpeed());
-            setY(getY() + getySpeed());
-            return this.toString();
-        }
+        setX(getX() + getxSpeed());
+        setY(getY() + getySpeed());
+        return this.toString();
+    }
 }

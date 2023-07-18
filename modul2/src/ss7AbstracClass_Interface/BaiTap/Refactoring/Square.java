@@ -1,6 +1,6 @@
 package ss7AbstracClass_Interface.BaiTap.Refactoring;
 
-public class Square extends Rectangle{
+public class Square extends Rectangle {
     public Square() {
     }
 

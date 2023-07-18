@@ -1,17 +1,17 @@
 package ss6KeThua.LopPointVaMoveablePoint;
 
 public class Point {
-        private float x = 0.0f;
-        private float y = 0.0f;
+    private float x = 0.0f;
+    private float y = 0.0f;
 
-        public Point() {
+    public Point() {
 
-        }
+    }
 
-        public Point(float x, float y) {
-            this.x = x;
-            this.y = y;
-        }
+    public Point(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
 
     public float getX() {
         return x;
@@ -30,12 +30,12 @@ public class Point {
     }
 
     public float[] getXY() {
-            float[] arr = {getX(), getY()};
-            return arr;
-        }
-
-        public String toString() {
-            return "( " + getX() + ", " + getY() + ")";
-        }
+        float[] arr = {getX(), getY()};
+        return arr;
     }
+
+    public String toString() {
+        return "( " + getX() + ", " + getY() + ")";
+    }
+}
 

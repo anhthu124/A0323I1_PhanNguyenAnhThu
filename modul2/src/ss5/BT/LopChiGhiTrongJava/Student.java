@@ -4,9 +4,9 @@ public class Student {
     private String name;
     private String classes;
 
-    Student(){
-        this.name ="John";
-        this.classes="CO2";
+    Student() {
+        this.name = "John";
+        this.classes = "CO2";
     }
 
     public String getName() {
