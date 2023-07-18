@@ -5,8 +5,8 @@ public class Student {
     private String classes;
 
     Student() {
-        this.name = "John";
-        this.classes = "CO2";
+        this.name = "A";
+        this.classes = "A03";
     }
 
     public String getName() {
