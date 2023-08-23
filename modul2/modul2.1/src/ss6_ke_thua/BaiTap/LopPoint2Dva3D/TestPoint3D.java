@@ -1,4 +1,4 @@
-package ss6KeThua.BaiTap.LopPoint2DVaLopPoint3D;
+package ss6_ke_thua.BaiTap.LopPoint2Dva3D;
 
 public class TestPoint3D {
 

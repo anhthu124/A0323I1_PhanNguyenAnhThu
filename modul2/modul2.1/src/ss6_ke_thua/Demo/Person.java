@@ -1,4 +1,4 @@
-package ss6KeThua.Demo;
+package ss6_ke_thua.Demo;
 
 public class Person {
     private int code;

@@ -1,4 +1,4 @@
-package ss6KeThua.BaiTapBoSung.LopPoint2DVaLopPoint3D;
+package ss6_ke_thua.BaiTap.LopPoint2Dva3D;
 
 public class Point2D {
     public float x;

@@ -1,12 +1,15 @@
-package ss6KeThua.BaiTap.LopPoint2DVaLopPoint3D;
+package ss6_ke_thua.BaiTap.LopPointVaMoveablePoint;
 
-public class Point2D {
+public class Point {
     public float x;
     public float y;
 
-    public Point2D(float x, float y) {
+    public Point(float x, float y) {
         this.x = x;
         this.y = y;
+    }
+
+    public Point() {
     }
 
     public float getX() {
@@ -25,21 +28,22 @@ public class Point2D {
         this.y = y;
     }
 
-    public float[] getXY() {
-        float xy[] = {x, y};
-        return xy;
-    }
 
     public void setXY(float x, float y) {
         this.x = x;
         this.y = y;
     }
 
+    public float[] getXY() {
+        float xy[] = {x, y};
+        return xy;
+    }
+
     @Override
     public String toString() {
-        return "Point2D{" +
-                "X=" + x +
-                ", Y=" + y +
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
                 '}';
     }
 }
