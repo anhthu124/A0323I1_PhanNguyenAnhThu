@@ -1,4 +1,4 @@
-package ss4LopVaDoiTuong.TH;
+package ss4_lop_va_doi_tuong.TH;
 
 import java.util.Scanner;
 

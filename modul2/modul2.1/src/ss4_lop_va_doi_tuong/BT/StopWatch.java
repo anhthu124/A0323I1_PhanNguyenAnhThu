@@ -1,4 +1,4 @@
-package ss4LopVaDoiTuong.BT;
+package ss4_lop_va_doi_tuong.BT;
 
 import java.time.LocalTime;
 

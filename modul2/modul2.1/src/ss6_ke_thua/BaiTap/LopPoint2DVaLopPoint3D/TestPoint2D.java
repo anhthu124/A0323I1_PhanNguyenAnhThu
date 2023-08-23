@@ -1,4 +1,4 @@
-package ss6KeThua.BaiTap.LopPoint2DVaLopPoint3D;
+package ss6KeThua.BaiTapBoSung.LopPoint2DVaLopPoint3D;
 
 import java.util.Arrays;
 
