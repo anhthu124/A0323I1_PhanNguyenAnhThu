@@ -1,13 +1,13 @@
-package ss7AbstracClass_Interface.BaiTap.Refactoring;
+package ss7_abstrac_class_interface.BaiTap;
 
 public class Shape {
     private String color = "green";
     private boolean filled = true;
 
-    public Shape() {
+    public Shape(double v) {
     }
 
-    public Shape(String color, boolean filled) {
+    public Shape(double color, double filled) {
         this.color = color;
         this.filled = filled;
     }
@@ -30,9 +30,10 @@ public class Shape {
 
     @Override
     public String toString() {
-        return "A shape with color of "
+        return "A Shape with color of "
                 + getColor()
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
     }
 }
+
