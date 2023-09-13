@@ -1,4 +1,4 @@
-package ss11.ChuyenDoiTuHeThapPhanSangHeNhieuPhan;
+package ss11.ChuyenDoiTuHeThapPhanSangHeNhiPhan;
 
 import java.util.Scanner;
 import java.util.Stack;
