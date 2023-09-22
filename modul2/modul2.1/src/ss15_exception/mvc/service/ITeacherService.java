@@ -1,0 +1,11 @@
+package ss15.mvc.service;
+
+public interface ITeacherService {
+    void addTeacher();
+
+    void displayAllTeacher();
+
+    void removeTeacher();
+
+    void FindTeacher();
+}
