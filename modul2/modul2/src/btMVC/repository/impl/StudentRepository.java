@@ -44,7 +44,27 @@ public class StudentRepository implements IStudentRepository {
         ReadWriteFile.writeFile(SRC_STUDENT, convertToString(student), true);
     }
 
-public void display(Student student){
+    @Override
+    public void updateStudentById(int id, Student student) {
+
+    }
+
+    @Override
+    public void searchStudentByName(String name) {
+
+    }
+
+    @Override
+    public boolean searchStudentById(int id) {
+        return false;
+    }
+
+    @Override
+    public boolean updateStudentById(int id) {
+        return false;
+    }
+
+    public void display(Student student){
 
 }
 

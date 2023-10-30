@@ -1,11 +1,8 @@
 package Phone.controller;
 
-import Phone.model.PhoneChinhHang;
-import Phone.model.PhoneXachTay;
 import Phone.service.PhoneChinhHangService;
 import Phone.service.PhoneXachTayService;
 
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class PhoneController {
@@ -13,6 +10,7 @@ public class PhoneController {
     public static PhoneChinhHangService phoneChinhHangService = new PhoneChinhHangService();
     public static PhoneXachTayService phoneXachTayService = new PhoneXachTayService();
     public static void displayMenu() {
+        boolean flag = true;
         do {
             try {
                 System.out.println("---Chương trình quản lý điện thoại---");
@@ -28,15 +26,19 @@ public class PhoneController {
                     case 2:
                         PhoneXachTay();
                         break;
+                    case 3:
+                        flag = false;
                 }
             }catch (NumberFormatException e){
                 System.out.println("Nhận không đúng định dạng !");
                 System.out.println("Chỉ được chọn 1 hoắc 2 !");
             }
-        } while (true);
+        } while (flag);
     }
 
     public static void PhoneChinhHang(){
+        Scanner scanner = new Scanner(System.in);
+        boolean flag = true;
         do {
             try {
                 System.out.println("---Menu điện thoại chính hãng ---");
@@ -67,16 +69,17 @@ public class PhoneController {
                         phoneChinhHangService.chinhSua();
                         break;
                     case 6:
-                        break;
+                        flag = false;
                 }
             }catch (NumberFormatException e){
                 System.out.println("Nhập không đúng định dạng !");
                 System.out.println("Chỉ được chọn 1 đến 6 !");
             }
-        } while (true);
+        } while (flag);
     }
 
     public static void PhoneXachTay(){
+        boolean flag = true;
         do {
             try{
                 System.out.println("---Menu Điện Thoại Xach Tay --- ");
@@ -114,6 +117,6 @@ public class PhoneController {
                 System.out.println("Nhập không đúng định dạng !");
                 System.out.println("Chỉ được chọn 1 đến 6 !");
             }
-        } while (true);
+        } while (flag);
     }
 }

@@ -11,11 +11,14 @@ public class StudentController {
 
 
     public static void menu() {
-        while (true) {
+        boolean flag = true;
+        do {
             System.out.println("1. Thêm mới");
             System.out.println("2. Chỉnh sửa");
             System.out.println("3. Hiển thị danh sách");
             System.out.println("4. Xóa");
+            System.out.println("5. Thoát ");
+            System.out.println(" Chọn chức năng: ");
             int choice = 0;
             try {
                 choice = Integer.parseInt(scanner.nextLine());
@@ -26,12 +29,19 @@ public class StudentController {
                 case 1:
                     iStudentService.addStudent();
                     break;
+                case 2:
+                    iStudentService.updateStudent();
+                    break;
                 case 3:
                     iStudentService.displayAllStudent();
                     break;
                 case 4:
                     iStudentService.removeStudent();
+                    break;
+                default:
+                    flag = false;
             }
-        }
+        } while (flag);
+
     }
 }

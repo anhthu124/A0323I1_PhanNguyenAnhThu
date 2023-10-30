@@ -9,28 +9,25 @@ import java.util.List;
 
 public class ReadWriteFile {
     public List<PhoneChinhHang> readChinhHang(String src) {
-        List<PhoneChinhHang> phoneChinhHangs = new ArrayList<>();
-        FileReader fileReader = null;
-        BufferedReader bufferedReader = null;
+        List<PhoneChinhHang> phoneChinhHangs = new ArrayList<>();;
         try {
+            FileReader fileReader = null;
+            BufferedReader bufferedReader = null;
             File file = new File(src);
             fileReader = new FileReader(file);
             bufferedReader = new BufferedReader(fileReader);
             String line = "";
+
             while ((line = bufferedReader.readLine()) != null) {
                 phoneChinhHangs.add(readChinhHangCsvLine(line));
             }
+
             bufferedReader.close();
+            fileReader.close();
         } catch (FileNotFoundException e) {
             System.out.println("Lỗi không tìm thấy file !");
         } catch (IOException e) {
             System.out.println("Lỗi đọc file !");
-        } finally {
-            try {
-                fileReader.close();
-            } catch (IOException e) {
-                System.out.println("Lỗi đóng file !");
-            }
         }
         return phoneChinhHangs;
     }

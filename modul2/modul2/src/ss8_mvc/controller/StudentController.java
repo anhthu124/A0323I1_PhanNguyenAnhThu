@@ -12,28 +12,34 @@ public class StudentController {
         boolean flag=true;
         do {
             System.out.println("Chọn chức năng :");
-            System.out.println("1.Display" +
+            System.out.println("1.Display " +
                     "\n 2.Add" +
                     "\n 3.Edit" +
                     "\n 4.Delete" +
-                    "\n 5.Exit"
+                    "\n 5.Search by name" +
+                    "\n 6.Exit"
             );
             int choose = Integer.parseInt(scanner.nextLine());
             switch (choose){
                 case 1:
-                    System.out.println("Code chức năng hiển thị");
+                    System.out.println("Danh sách sinh viên");
                     studentService.display();
                     break;
                 case 2:
-                    System.out.println("Code chức năng thêm mới");
+                    System.out.println("Nhập thông tin");
                     studentService.add();
                     break;
                 case 3:
                     System.out.println("Code chức năng sửa");
+                    studentService.edit();
                     break;
                 case 4:
                     System.out.println("Code chức năng xoá");
                     studentService.delete();
+                    break;
+                case 5:
+                    System.out.println("Code chức năng tìm kiếm");
+                    studentService.searchByName();
                     break;
                 default:
                     flag = false;

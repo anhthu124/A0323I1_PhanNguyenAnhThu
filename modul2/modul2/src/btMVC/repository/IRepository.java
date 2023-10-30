@@ -10,4 +10,6 @@ public interface IRepository<E> {
     void add(E e);
 
     List<E> getAll();
+
+
 }

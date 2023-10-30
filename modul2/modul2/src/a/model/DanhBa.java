@@ -2,7 +2,6 @@ package a.model;
 
 import java.util.Scanner;
 
-import static Phone.controller.PhoneController.scanner;
 
 public class DanhBa {
     private String name;
@@ -12,7 +11,6 @@ public class DanhBa {
     private String facbook;
 
 
-    Scanner nhap=new Scanner(System.in);
 
     public DanhBa(){}
 
@@ -75,24 +73,24 @@ public class DanhBa {
     }
 
     public void input(){
+        Scanner scanner=new Scanner(System.in);
         System.out.print("Nhap vao ten:");
-        this.name=nhap.nextLine();
+        this.name=scanner.nextLine();
 
         boolean isFlag;
         String a = "";
-        do {
+//        do {
             System.out.print("Nhap vao dien thoai :");
-            a = scanner.nextLine();
-            isFlag = a.matches("^[0-9]{10}$");
+//            a =scanner.nextLine();
+//            isFlag = a.matches("^[0-9]{10}$");
+//        } while (!isFlag);
 
-        } while (!isFlag);
-
-        this.phonenumber=Integer.parseInt(nhap.nextLine());
+        this.phonenumber=Integer.parseInt(scanner.nextLine());
         System.out.print("Nhap vao dia chi:");
-        this.address=nhap.nextLine();
+        this.address=scanner.nextLine();
         System.out.print("Nhap vao email:");
-        this.email=nhap.nextLine();
+        this.email=scanner.nextLine();
         System.out.print("Nhap vao facbook:");
-        this.facbook=nhap.nextLine();
+        this.facbook=scanner.nextLine();
     }
 }

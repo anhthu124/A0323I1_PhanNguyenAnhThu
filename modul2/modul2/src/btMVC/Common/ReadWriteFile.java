@@ -3,12 +3,8 @@ package btMVC.Common;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+
 public class ReadWriteFile {
-
-
-
     public static void writeFile(String src, String value, boolean append) {
         File file = new File(src);
         BufferedWriter bufferedWriter = null;
@@ -17,6 +13,7 @@ public class ReadWriteFile {
             bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(value);
             bufferedWriter.newLine();
+            bufferedWriter.flush();
         } catch (IOException e) {
             System.out.println("Lỗi ghi file");
         } finally {
@@ -41,26 +38,20 @@ public class ReadWriteFile {
             while ((line = bufferedReader.readLine()) != null) {
                 strings.add(line);
             }
+            bufferedReader.close();
         } catch (FileNotFoundException e) {
             System.out.println("File không tồn tại");
         } catch (IOException e) {
             System.out.println("Lỗi đoc file");
-        }finally {
-            try {
-                bufferedReader.close();
-            } catch (IOException e) {
-                System.out.println("Lỗi đóng file");
-            }
         }
         return strings;
     }
     public static void main(String[] args) {
 
-             File file   = new File("src/btMVC/data/student.csv");
-             FileWriter fileWriter=null;
+        File file   = new File("D:\\Skill\\codegym\\mobiphone.model\\modul2\\modul2\\src\\btMVC\\data\\student.csv");
+        FileWriter fileWriter=null;
         try {
             fileWriter = new FileWriter(file, true);
-//            fileWriter.write("A0723I1");
         } catch (IOException e) {
             System.out.println("Lỗi ghi file");
         } finally {

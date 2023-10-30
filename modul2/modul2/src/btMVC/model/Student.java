@@ -18,7 +18,7 @@ public class Student extends Person {
         this.grade = grade;
     }
 public String toString(){
-        return "Mã: "+super.getCode()+", Tên: "+super.getName();
+        return "Mã: "+super.getCode()+", Tên: "+super.getName()+", ngày sinh: "+super.getDateOfBirth()+", điểm: "+grade;
 }
 
 }

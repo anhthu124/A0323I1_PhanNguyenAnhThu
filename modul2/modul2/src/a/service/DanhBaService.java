@@ -1,6 +1,6 @@
 package a.service;
 
-import a.docghifile.ReadAndWrite;
+import a.untils.ReadAndWrite;
 import a.model.DanhBa;
 
 import java.util.ArrayList;
@@ -18,11 +18,13 @@ public class DanhBaService {
         danhBas.add(danhBa);
     }
 
-    public void disPlay(){
-        for (DanhBa e:danhBas) {
-            System.out.println(e.toString());
+    public void disPlay() {
+
+            for (DanhBa e : danhBas) {
+                System.out.println(e.toString());
+            }
         }
-    }
+
 
     public void Edit(){
         System.out.print("Nhap vao so danh ba can edit:");

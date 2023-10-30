@@ -5,7 +5,7 @@ import btMVC.repository.ITeacherRepository;
 
 import java.util.List;
 
-public abstract class TeacherRepository implements ITeacherRepository {
+public class TeacherRepository implements ITeacherRepository {
 
     @Override
     public void remove(int teacher) {
