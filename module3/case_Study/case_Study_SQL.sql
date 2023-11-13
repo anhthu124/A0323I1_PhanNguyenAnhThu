@@ -435,20 +435,6 @@ sql_safe_updates = 1;
 
 -- 17. Cập nhật thông tin những khách hàng có ten_loai_khach từ Platinum lên Diamond,
 --  chỉ cập nhật những khách hàng đã từng đặt phòng với Tổng Tiền thanh toán trong năm 2021 là lớn hơn 10.000.000 VNĐ.
-select * 
-
-from khach_hang
-         join loai_khach on khach_hang.ma_loai_khach = loai_khach.ma_loai_khach
-         left join hop_dong on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
-         left join dich_vu on dich_vu.ma_dich_vu = hop_dong.ma_dich_vu
-where loai_khach.ten_loai_khach = 'Platinium'
-group by khach_hang.ma_khach_hang
-having thanh_tien >= 10000000;
-
-
-
-
-
 
 
 
@@ -467,13 +453,8 @@ set
 sql_safe_updates = 1;
 
 -- 19.	Cập nhật giá cho các dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2020 lên gấp đôi.
-select dich_vu_di_kem.ma_dich_vu_di_kem, dich_vu_di_kem.ten_dich_vu_di_kem
-from dich_vu_di_kem
-         join hop_dong_chi_tiet on hop_dong_chi_tiet.ma_dich_vu_di_kem = dich_vu_di_kem.ma_dich_vu_di_kem
-         join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
-where year (hop_dong.ngay_lam_hop_dong) = 2020
-group by dich_vu_di_kem.ma_dich_vu_di_kem
-having sum (hop_dong_chi_tiet.so_luong) > 10;
+
+
 
 -- 20.	Hiển thị thông tin của tất cả các nhân viên và khách hàng có trong hệ thống, thông tin hiển thị bao gồm id (ma_nhan_vien, ma_khach_hang), ho_ten, email, so_dien_thoai, ngay_sinh, dia_chi.
 select ma_nhan_vien as id, ho_ten, email, so_dien_thoai, ngay_sinh, dia_chi
