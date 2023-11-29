@@ -5,7 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e6452ad-fd9a-4f33-b9d5-12b5544ea2a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../s11/Product/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../modul2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/java/Controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/java/Model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/java/Repository/IProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/java/Repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/java/Service/IProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/java/Service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/java/com/example/product/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/webapp/Product/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/webapp/Product/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/webapp/Product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/webapp/Product/update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11/Product/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +103,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../s11/Product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ss11/QuanLySanPham" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -237,11 +264,22 @@
       <workItem from="1701255256890" duration="204000" />
       <workItem from="1701255576993" duration="307000" />
       <workItem from="1701255926497" duration="613000" />
-      <workItem from="1701256582539" duration="1801000" />
+      <workItem from="1701256582539" duration="2493000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
