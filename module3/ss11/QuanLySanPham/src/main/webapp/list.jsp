@@ -24,9 +24,9 @@
     </style>
 </head>
 <body>
-<button><a href="product-servlet">Danh sach san pham</a></button><br>
-<button><a href="product-servlet?action=showFormCreate">Them moi san pham</a></button><br>
-<button><a href="product-servlet?action=showFormDelete">Xoa san phẩm</a></button><br>
+<button><a href="product-servlet">Danh sach </a></button><br>
+<button><a href="product-servlet?action=showFormCreate">Them moi </a></button><br>
+<button><a href="product-servlet?action=showFormDelete">Xoa </a></button><br>
 
 
     <table border="1" >

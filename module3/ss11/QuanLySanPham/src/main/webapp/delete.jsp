@@ -11,9 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-<a href="product-servlet">Danh sach san pham</a>
-<a href="product-servlet?action=showFormCreate">Them moi san pham</a>
-<a href="product-servlet?action=showFormDelete">Xoa san phẩm</a>
+<a href="product-servlet">Danh sach </a>
+<a href="product-servlet?action=showFormCreate">Them moi </a>
+<a href="product-servlet?action=showFormDelete">Xoa </a>
 <a href="product-servlet?action=showFormUpdate">Cap nhap</a>
 <form action="/product-servlet?action=delete" method="post">
     <lable>Nhập ID: <input type="text" name="code"></lable>
