@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0bd948fa-2f49-4d66-90a5-f55f8d627cef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../baiMau/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../baiMau/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../baiMau/Repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../baiMau/Repository/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../baiMau/Repository/impl/BenhNhanThuongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../baiMau/Repository/impl/BenhNhanThuongRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../baiMau/Service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../baiMau/Service/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../baiMau/Service/IServiceThuong.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../baiMau/Service/IServiceThuong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../baiMau/Service/impl/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../baiMau/Service/impl/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../baiMau/Util/ReadAndWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../baiMau/Util/ReadAndWrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../baiMau/model/BenhNhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../baiMau/model/BenhNhan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/BT/Task 5 bài 2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/BT/Task 5 bài 2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/bai them/Hoa.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/bai them/Hoa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/bai them/QLDT.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/bai them/QLDT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/bai them/QLSV.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/bai them/QLSV.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/bai them/TongCHANle.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/bai them/TongCHANle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/bai them/baiTuoiChaTuoiCon.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/bai them/baiTuoiChaTuoiCon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/bai them/démNT.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/bai them/démNT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss1/bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss1/bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss1/bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss1/bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss1/bt_TaoCV-Ca-Nhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss1/bt_TaoCV-Ca-Nhan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss1/bt_TaoDanhSach.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss1/bt_TaoDanhSach.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss1/formDangKyNguoiDung.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss1/formDangKyNguoiDung.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss1/simpleform.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss1/simpleform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss11/Luyện tập 1/Luyện tập vòng lặp 01 - Bài 06.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss11/Luyện tập 1/Luyện tập vòng lặp 01 - Bài 06.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss12/[Bài tập] Sử dụng các hàm có sẵn của mảng.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss12/[Bài tập] Sử dụng các hàm có sẵn của mảng.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss13/Luyen tap 1/Luyện tập mảng 01 - 04.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss13/Luyen tap 1/Luyện tập mảng 01 - 04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss14/Chuyển đổi nhiệt độ.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss14/Chuyển đổi nhiệt độ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss16/[Bài tập] Game đơn giản - di chuyển đối tượng.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss16/[Bài tập] Game đơn giản - di chuyển đối tượng.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss16/[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss16/[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss16/[Bài tập] Xây dựng lớp mô tả Temperature.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss16/[Bài tập] Xây dựng lớp mô tả Temperature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss16/[Bài tập] Xây dựng lớp mô tả hình chữ nhật.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss16/[Bài tập] Xây dựng lớp mô tả hình chữ nhật.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss8/sign3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss8/sign3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss9/Luyện tập 2/Luyện tập cấu trúc điều kiện 02 - Bài 1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss9/Luyện tập 2/Luyện tập cấu trúc điều kiện 02 - Bài 1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul1/ss9/Luyện tập 2/Luyện tập cấu trúc điều kiện 02 - Bài 5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul1/ss9/Luyện tập 2/Luyện tập cấu trúc điều kiện 02 - Bài 5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modul2/out/production/modul2/mvc/data/student.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modul2/out/production/modul2/mvc/data/student.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7/bai_tap/bai3/bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7/bai_tap/bai3/bai3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11/QuanLySanPham/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11/QuanLySanPham/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11/QuanLySanPham/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11/QuanLySanPham/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11/QuanLySanPham/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11/QuanLySanPham/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/baiTap/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12/demo/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12/demo/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12/demo/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/src/main/java/com/example/demo3/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/demo3/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/thucHanh/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12/thucHanh/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/thucHanh/src/main/java/com/example/thuchanh/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12/thucHanh/src/main/java/com/example/thuchanh/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/thucHanh/src/main/java/com/example/thuchanh/dao/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12/thucHanh/src/main/java/com/example/thuchanh/dao/IUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/thucHanh/src/main/java/com/example/thuchanh/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12/thucHanh/src/main/java/com/example/thuchanh/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12/thucHanh/src/main/java/com/example/thuchanh/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12/thucHanh/src/main/java/com/example/thuchanh/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/build/classes/java/main/com/example/demo/repository/BaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/build/classes/java/main/com/example/demo/repository/BaseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/build/libs/demo-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/build/libs/demo-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss13/demo/src/main/java/com/example/demo/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss13/demo/src/main/java/com/example/demo/repository/BaseRepository.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2bP1A2gAmBviwPv70BAiveNOe6t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bd948fa-2f49-4d66-90a5-f55f8d627cef" name="Changes" comment="" />
+      <created>1706101752684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706101752684</updated>
+      <workItem from="1706101754137" duration="21000" />
+      <workItem from="1706103839730" duration="16000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
