@@ -1,6 +1,6 @@
-package dao;
+package com.example.thuchanh.dao;
 
-import model.User;
+import com.example.thuchanh.model.User;
 
 import java.sql.SQLException;
 import java.util.List;

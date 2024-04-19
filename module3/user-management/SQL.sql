@@ -1,0 +1,1 @@
+SELECT * FROM end_m3.product;

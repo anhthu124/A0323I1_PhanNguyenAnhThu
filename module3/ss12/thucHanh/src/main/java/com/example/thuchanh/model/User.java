@@ -1,4 +1,4 @@
-package model;
+package com.example.thuchanh.model;
 
 public class User {
     protected int id;
@@ -6,7 +6,7 @@ public class User {
     protected String email;
     protected  String country;
 
-    public User() {
+    public User(String name, String email, String country) {
     }
 
     public User(int id, String name, String email, String country) {

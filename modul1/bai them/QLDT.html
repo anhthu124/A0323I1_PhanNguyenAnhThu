@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +13,7 @@
     &nbsp;Giá: <input type="number" id="price">
     <input onclick="addMobile()" type="button" value="Thêm mới điện thoại">
 
-    <div><p id="result"> </p></div>
+    <div><p id="result"></p></div>
     </div>
 </form>
 </body>
@@ -71,6 +70,7 @@
 
 
     let list = [];
+
     function addMobile() {
         let model = document.getElementById('model').value;
         let name = document.getElementById('name').value;
@@ -83,7 +83,7 @@
 
 
     function display(arr) {
-        let data= '<br><h2>Danh sách điện thoại</h2><table border="1">'
+        let data = '<br><h2>Danh sách điện thoại</h2><table border="1">'
             + '<tr>'
             + '<th>STT</th>'
             + '<th>Model</th>'
