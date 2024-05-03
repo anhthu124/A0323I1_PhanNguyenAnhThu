@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Update student's information:</h1>
+<hr>
+<form method="post" th:object="${student}">
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>
+                <input type="number" th:field="*{id}" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" th:field="*{name}" >
+                <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="text" th:field="*{email}">
+                <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td>
+                <select th:field="*{codeGymClass}">
+                    <option th:each="cgc: ${listCodeGymClass}"
+                            th:value="${cgc.id}"
+                            th:text="${cgc.name}"
+                    ></option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Update"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
