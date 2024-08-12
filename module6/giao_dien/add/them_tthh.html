@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm thông tin hàng hóa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #CCFFFF;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 40%;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .container h2 {
+            text-align: center;
+            color: #1E90FF;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="file"] {
+            display: none;
+        }
+        .form-group .file-label {
+            display: block;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f9f9f9;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .form-group .file-label:hover {
+            background: #f1f1f1;
+        }
+        .form-group img {
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+            max-width: 100px;
+        }
+        .form-actions {
+            text-align: center;
+        }
+        .form-actions button {
+            padding: 10px 20px;
+            border: none;
+            background: #17a2b8;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .form-actions button:hover {
+            background: #138496;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Thêm thông tin hàng hóa</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Tên hàng</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="price">Giá</label>
+            <input type="number" id="price" name="price" >
+            <span>VND</span>
+        </div>
+        <div class="form-group">
+            <label for="image">Hình ảnh hàng hóa</label>
+            <label for="image" class="file-label">Chọn tệp</label>
+            <input type="file" id="image" name="image">
+            <img src="" id="preview" alt="">
+        </div>
+        <div class="form-group">
+            <label for="screen-size">Kích thước màn hình</label>
+            <input type="text" id="screen-size" name="screen-size">
+        </div>
+        <div class="form-group">
+            <label for="camera">Camera</label>
+            <input type="text" id="camera" name="camera">
+        </div>
+        <div class="form-group">
+            <label for="selfie">Selfie</label>
+            <input type="text" id="selfie" name="selfie">
+        </div>
+        <div class="form-group">
+            <label for="cpu">CPU</label>
+            <input type="text" id="cpu" name="cpu">
+        </div>
+        <div class="form-group">
+            <label for="storage">Lưu trữ</label>
+            <input type="text" id="storage" name="storage">
+        </div>
+        <div class="form-group">
+            <label for="description">Mô tả thêm</label>
+            <textarea id="description" name="description" rows="5"></textarea>
+        </div>
+        <div class="form-actions">
+            <button type="submit">Thêm mới</button>
+            <button type="button">Hủy</button>
+        </div>
+    </form>
+</div>
+<script>
+    document.getElementById('image').addEventListener('change', function (event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('preview').src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+</body>
+</html>

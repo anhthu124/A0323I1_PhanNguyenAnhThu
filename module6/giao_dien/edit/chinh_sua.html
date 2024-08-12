@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product Information</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="chinh_sua.css">
+</head>
+<body>
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white text-center">
+            <h5 class="mb-0">Edit Product Information</h5>
+        </div>
+        <div class="card-body">
+            <form class="product-form">
+                <div class="form-group">
+                    <label for="productName">Product Name</label>
+                    <input type="text" class="form-control form-control-sm" id="productName" name="productName" value="OPPO Reno7">
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="text" class="form-control form-control-sm" id="price" name="price" value="8,490,000 VND">
+                </div>
+
+                <div class="form-group">
+                    <label for="productImage">Product Image</label>
+                    <input type="file" class="form-control-file" id="productImage" name="productImage">
+                    <img src="image.png" alt="OPPO Reno7" class="img-fluid mt-2 product-img">
+                </div>
+
+                <div class="form-group">
+                    <label for="screenSize">Screen Size</label>
+                    <input type="text" class="form-control form-control-sm" id="screenSize" name="screenSize" value="6.4 inch">
+                </div>
+
+                <div class="form-group">
+                    <label for="camera">Camera</label>
+                    <input type="text" class="form-control form-control-sm" id="camera" name="camera" value="64.0 MP">
+                </div>
+
+                <div class="form-group">
+                    <label for="selfie">Selfie</label>
+                    <input type="text" class="form-control form-control-sm" id="selfie" name="selfie" value="32.0 MP">
+                </div>
+
+                <div class="form-group">
+                    <label for="cpu">CPU</label>
+                    <input type="text" class="form-control form-control-sm" id="cpu" name="cpu" value="Snapdragon 680">
+                </div>
+
+                <div class="form-group">
+                    <label for="storage">Storage</label>
+                    <input type="text" class="form-control form-control-sm" id="storage" name="storage" value="128 GB">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Additional Description</label>
+                    <textarea class="form-control form-control-sm" id="description" name="description" rows="2">Thiết kế cổ điển, cùng sắc màu thời thượng, OPPO Reno7 mang tới nét đẹp độc đáo và đầy sự sáng tạo cho người dùng Gen Z...</textarea>
+                </div>
+
+                <div class="form-group d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary btn-sm">Update</button>
+                    <button type="button" class="btn btn-danger btn-sm">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
