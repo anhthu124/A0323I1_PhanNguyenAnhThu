@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="exploded-war" name="unnamed">
-    <output-path>$PROJECT_DIR$/demo_jstl_c0723/build/libs</output-path>
-    <root id="root" />
-  </artifact>
-</component>
