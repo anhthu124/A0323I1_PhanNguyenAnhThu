@@ -1,0 +1,80 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "bookId": "BO-0001",
+      "name": "AAA",
+      "type": {
+        "id": 1,
+        "name": "BBB"
+      },
+      "date": "2023-11-12",
+      "count": 3
+    },
+    {
+      "id": "2",
+      "bookId": "BO-0002",
+      "name": "CCC",
+      "type": {
+        "id": 1,
+        "name": "DDD"
+      },
+      "date": "2023-10-11",
+      "count": 7
+    },
+    {
+      "id": "3",
+      "bookId": "BO-0003",
+      "name": "AAACCC",
+      "type": {
+        "id": 1,
+        "name": "DDD"
+      },
+      "date": "2023-10-11",
+      "count": 7
+    },
+    {
+      "id": "b22b",
+      "bookId": "BO-0005",
+      "name": "THIEN1",
+      "type": {
+        "id": "2",
+        "name": "DDD"
+      },
+      "date": "2024-04-09",
+      "count": 6
+    },
+    {
+      "id": "9254",
+      "bookId": "BO-0007",
+      "name": "thiekutp1",
+      "type": {
+        "id": "2",
+        "name": "DDD"
+      },
+      "date": "2024-04-10",
+      "count": 4
+    },
+    {
+      "id": "e5f3",
+      "bookId": "BO-0006",
+      "name": "thienkuto1",
+      "type": {
+        "id": "2",
+        "name": "DDD"
+      },
+      "date": "2024-04-10",
+      "count": 4.5
+    }
+  ],
+  "types": [
+    {
+      "id": "1",
+      "name": "BBB"
+    },
+    {
+      "id": "2",
+      "name": "DDD"
+    }
+  ]
+}
