@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code/BE/C0823I1-BE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code/FE/C0823I1-FE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/qlDTDD" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/quanLyDTL" vcs="Git" />
+  </component>
+</project>

@@ -1,10 +1,122 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết hàng hóa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .product-details {
+            background: #fff;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .product-details h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333; /* Main color */
+        }
+        .product-image {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            border: 2px solid #333; /* Main color border */
+            border-radius: 8px;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-info h4 {
+            margin-bottom: 15px;
+            color: #333; /* Main color for titles */
+        }
+        .product-info p {
+            margin-bottom: 10px;
+        }
+        .btn-secondary {
+            background-color: #36B9CC;
+            border-color: #36B9CC;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #2b97a4;
+            border-color: #2b97a4;
+        }
+        .back-button {
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+<div class="container">
+    <div class="product-details col-12 col-lg-10 mx-auto">
+        <h2>Chi tiết hàng hóa</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Display the product image -->
+                <img class="product-image" src="https://th.bing.com/th/id/OIP.YjJd9bZRlATh4TKilJmNDAHaHa?w=191&h=191&c=7&r=0&o=5&dpr=1.6&pid=1.7" alt="Product Image" id="productImage">
+            </div>
+            <div class="col-md-6 product-info">
+                <h4 id="productName">Tên sản phẩm: iPhone 13 mini 128GB</h4>
+                <p><strong>Thương hiệu:</strong> <span id="productBrand">Apple</span></p>
+                <p><strong>Giá:</strong> <span id="productPrice">18.490.000</span> VND</p>
+                <p><strong>CPU:</strong> <span id="productCpu">Apple A15 Bionic</span></p>
+                <p><strong>Kích thước màn hình:</strong> <span id="productScreenSize">5.4 inches</span></p>
+                <p><strong>Camera chính:</strong> <span id="productCamera">12 MP</span></p>
+                <p><strong>Camera Selfie:</strong> <span id="productSelfieCamera">12 MP</span></p>
+                <p><strong>Bộ nhớ trong:</strong> <span id="productStorage">128 GB</span></p>
+                <p><strong>Mô tả:</strong> <span id="productDescription">Chiếc điện thoại thông minh mạnh mẽ với chip Apple A15 Bionic, khả năng chụp ảnh ấn tượng, và thiết kế nhỏ gọn.</span></p>
+            </div>
+        </div>
+        <!-- Back to product list button -->
+        <a href="product-list.html" class="btn btn-secondary back-button">Quay lại danh sách hàng hóa</a>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Fetch product details from backend (example script) -->
+<script>
+    const productId = 1; // Replace with dynamic ID from query params or routing
+
+    function fetchProductDetails() {
+        fetch(`/api/${productId}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("productName").textContent = data.name;
+                document.getElementById("productBrand").textContent = data.brand.name;
+                document.getElementById("productPrice").textContent = new Intl.NumberFormat().format(data.price);
+                document.getElementById("productCpu").textContent = data.cpu;
+                document.getElementById("productScreenSize").textContent = data.screenSize + ' inches';
+                document.getElementById("productCamera").textContent = data.camera;
+                document.getElementById("productSelfieCamera").textContent = data.selfieCamera;
+                document.getElementById("productStorage").textContent = data.storage + ' GB';
+                document.getElementById("productDescription").textContent = data.description;
+                document.getElementById("productImage").src = data.image; // Assuming a valid image URL
+            })
+            .catch(error => console.error('Error fetching product details:', error));
+    }
+
+    // Fetch the product details on page load
+    document.addEventListener("DOMContentLoaded", fetchProductDetails);
+</script>
 </body>
 </html>
