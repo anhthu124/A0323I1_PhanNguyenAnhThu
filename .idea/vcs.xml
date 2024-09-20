@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/modul2.1/A0523I1_PhanNguyenAnhThu" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/modul2/modul2.1/A0523I1_PhanNguyenAnhThu" vcs="Git" />
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module 4/baiTapLamThem" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module 4/thi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module 4/thi2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module 4/thi3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module4-C08/Product" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module4-C08/baiDuAn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module4-C08/baimau" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module4-C08/baitap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module4-C08/rapChieuPhim" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module4-C08/thi3" vcs="Git" />
   </component>
 </project>
